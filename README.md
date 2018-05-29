@@ -15,11 +15,11 @@
   * urllib2
   * json
   
- git clone https://www.github.com/Oseid/IPsFo.git
- cd IPsFo/
- chmod +x IPsFo.py
- python IPsFo.py
- 
+ - git clone https://www.github.com/Oseid/IPsFo.git
+   * cd IPsFo/
+   * chmod +x IPsFo.py
+   * python IPsFo.py
+   
 # That's All:)
 - By Oseid Aldary
 - Thanks for using
