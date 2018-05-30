@@ -81,9 +81,11 @@ def GetIPs(target):
 	else:
 	    pass
 	    exit(1)
-        ask = raw_input("\n\033[1;36m [b]\033[1;37mack \033[1;36m[e]\033[1;37mxit :\033[1;31m ")
+        ask = raw_input("\n\033[1;36m[b]\033[1;37mack \033[1;36m[e]\033[1;37mxit :\033[1;31m ")
         while ask == "" or ask is None or ask not in 'be':
-                   ask = raw_input("\n\033[1;31m[!]\033[1;33m[b]\033[1;37mack\033[1;33m [e]\033[1;37mxit :\033[1;31m ")
+                   if ask not in "be":
+			print("\n\033[1;33m[\033[1;31m!\033[1;33m][ERROR] Of Your Choice[\033[1;31m{}\033[1;33m] Is Not Exist\033[1;31m!!".format(ask))
+                   ask = raw_input("\033[1;31m[!]\033[1;33m[b]\033[1;37mack\033[1;33m [e]\033[1;37mxit :\033[1;31m ")
         if ask == "b":
                 Main()
         else:
@@ -104,9 +106,11 @@ def revdom(target):
     else:
 	print("\033[1;31m[!]\033[1;32m Please Check Your Internet Connection \033[1;31m !!!")
 
-    ask = raw_input("\n\033[1;36m [b]\033[1;37mack \033[1;36m[e]\033[1;37mxit :\033[1;31m ")
+    ask = raw_input("\n\033[1;36m[b]\033[1;37mack \033[1;36m[e]\033[1;37mxit :\033[1;31m ")
     while ask == "" or ask is None or ask not in 'be':
-            ask = raw_input("\n\033[1;31m[!]\033[1;33m[b]\033[1;37mack\033[1;33m [e]\033[1;37mxit : \033[1;31m")
+            if ask not in "be":
+		print("\n\033[1;33m[\033[1;31m!\033[1;33m][ERROR] Of Your Choice[\033[1;31m{}\033[1;33m] Is Not Exist\033[1;31m!!".format(ask))
+            ask = raw_input("\033[1;31m[!]\033[1;33m[b]\033[1;37mack\033[1;33m [e]\033[1;37mxit : \033[1;31m")
     if ask == "b":
              Main()
     else:
@@ -157,9 +161,11 @@ def IPsFo(target):
 	 print("\033[1;92m" + " TimeZone: " +"\033[1;37m"+ labs['timezone'])
 	 print("\033[1;92m" + " AS: " +"\033[1;37m"+ labs['as'] + "\n")
 	 print("\033[1;35m======================================")
-	ask = raw_input("\n\033[1;36m [b]\033[1;37mack \033[1;36m[e]\033[1;37mxit :\033[1;31m ")
+	ask = raw_input("\n\033[1;36m[b]\033[1;37mack \033[1;36m[e]\033[1;37mxit :\033[1;31m ")
 	while ask == "" or ask is None or ask not in 'be':
-	           ask = raw_input("\n\033[1;31m[!]\033[1;33m[b]\033[1;37mack\033[1;33m [e]\033[1;37mxit :\033[1;31m ") 
+		   if ask not in "be":
+				print("\n\033[1;33m[\033[1;31m!\033[1;33m][ERROR] Of Your Choice[\033[1;31m{}\033[1;33m] Is Not Exist\033[1;31m!!".format(ask))
+	           ask = raw_input("\033[1;31m[!]\033[1;33m[b]\033[1;37mack\033[1;33m [e]\033[1;37mxit :\033[1;31m ") 
 	if ask == "b":
 		Main()
 	else:
